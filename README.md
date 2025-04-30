@@ -11,70 +11,93 @@ Background: The AYUSH sector relies heavily on medicinal plants and herbs, which
 Ministry of Ayush
 
 ## Idea
-Title: Virtual Herbal Garden – Experience AYUSH Medicinal Plants Digitally
+The core idea is to create a Virtual Herbal Garden platform that allows users to explore, learn, and interact with a wide variety of medicinal plants used in AYUSH systems—from anywhere and at any time.
 
+This platform will combine technology with traditional herbal knowledge, using 3D models, multimedia content, and virtual tours to provide a highly engaging and educational experience. It aims to promote awareness of India’s rich medicinal plant heritage while supporting AYUSH learning for students, practitioners, and enthusiasts.
 
-A web-based platform that provides an interactive and immersive experience of a digital herbal garden showcasing medicinal plants used in AYUSH systems. Users can explore 3D plant models, learn their uses, take guided virtual tours, and interact with multimedia content—making ancient traditional knowledge accessible and engaging for everyone.
+Through intuitive features like search filters, interactive tours, and plant bookmarking, users will be empowered to discover herbal solutions aligned with their interests—such as immunity boosting, digestive wellness, or skincare—making the garden not only informative but also personally relevant and accessible.
 
 ## Proposed Solution / Architecture Diagram
 
+# Proposed Solution
+The proposed solution is a web-based and VR-enabled Virtual Herbal Garden platform. It will include:
+
+3D Interactive Models:
+Realistic 3D models of plants with zoom, rotate, and explore capabilities.
+
+Detailed Plant Profiles:
+Each plant will include:
+
+Botanical and common names
+
+Geographic distribution
+
+Medicinal uses (with AYUSH system relevance)
+
+Cultivation methods and harvesting periods
+
+Multimedia Content:
+
+High-resolution plant images
+
+Informative videos about usage and benefits
+
+Audio guides for accessibility
+
+Search & Filter Tools:
+
+Filter by disease (e.g., immunity, digestion, skin)
+
+Sort by region, plant family, or AYUSH system
+
+Virtual Tours:
+
+Thematic explorations such as:
+
+"Plants for Immunity"
+
+"Ayurvedic Digestive Aids"
+
+User Engagement Features:
+
+Bookmark favorite plants
+
+Add notes
+
+Share plant profiles via social media
+
+# Architecture Diagram
 ![alt text](image.png)## Use Cases
 
-| Use Case ID | Title                           | Description                                                                 |
-|-------------|---------------------------------|-----------------------------------------------------------------------------|
-| UC1         | View Plant Information          | Users browse plants and view their medicinal properties and usage.         |
-| UC2         | Explore 3D Model                | Users interact with plant models (zoom, rotate, pan).                      |
-| UC3         | Guided Tour                     | Users take virtual themed tours (e.g., “Immunity Plants”).                 |
-| UC4         | Search & Filter                 | Users filter plants based on disease, region, or AYUSH system.            |
-| UC5         | Bookmark/Save Plants            | Users can mark favorite plants and save notes.                            |
-| UC6         | Share to Social Media           | Share plant profiles via social platforms.                                |
-| UC7         | Multimedia Playback             | Users can view video, listen to audio explanations, or photo galleries.   |
-| UC8         | Admin Management (Optional)     | Admins can add/edit plant data, images, and videos.                       |
+# Use Case
+Student Learning – Botany or AYUSH students explore plant uses for academic knowledge.
+
+Practitioners’ Reference – Quick reference for practitioners in AYUSH practices.
+
+Public Awareness – Enthusiasts learning about herbal remedies and cultivation.
+
+Educational Institutions – Used in classes for immersive herbal studies.
 
 ## Technology Stack
 
-| Layer         | Technology                              |
-|---------------|------------------------------------------|
-| **Frontend**  | React.js, Three.js or Babylon.js (for 3D), TailwindCSS |
-| **Backend**   | Node.js + Express.js                    |
-| **Database**  | MongoDB (Atlas) or Firebase Firestore   |
-| **Storage**   | AWS S3 / Firebase Storage (for media)   |
-| **Authentication (optional)** | Firebase Auth / Auth0 |
-| **DevOps/Hosting** | Vercel / Netlify (Frontend), Heroku / Render (Backend) |
-| **3D Assets** | Blender (for model creation), Sketchfab (for sourcing) |
-| **Others**    | Figma (UI/UX design), Postman (API testing) |
+| Layer             | Tools / Technologies                                      |
+|------------------|-----------------------------------------------------------|
+| Frontend         | React.js / Three.js / WebGL for 3D interaction            |
+| Backend          | Node.js with Express or Django                            |
+| Database         | MongoDB / PostgreSQL (Plant data, user interactions)      |
+| 3D Modelling     | Blender / Unity (For rendering and exporting plant models)|
+| VR Support       | WebXR / A-Frame                                            |
+| Multimedia Hosting | AWS S3 / Firebase Storage                               |
+| Search & Filter  | ElasticSearch / Algolia                                   |
+| Authentication   | Firebase Auth / OAuth                                     |
 
 ## Dependencies
-🔹 Software & Libraries
-React.js, Three.js or Babylon.js
+1. 3D Plant Models – Requires collaboration with botanists or plant databases.
 
-Node.js, Express.js
+2. AYUSH Data – Sourced from Ministry of AYUSH and verified herbal texts.
 
-MongoDB driver or Mongoose
+3. Multimedia Content – Videos/images from reliable sources or created in-house.
 
-AWS SDK (if using S3), or Firebase SDK
+4. Cloud Hosting – AWS, Firebase, or other cloud services for scalability.
 
-React Router, Axios, Framer Motion (for UI/UX)
-
-Multer (for file upload in Node backend)
-
-Cloudinary (optional for image hosting)
-
-🔹 Hardware / External
-3D model design software (Blender)
-
-High-quality audio/video equipment (for content creation)
-
-Cloud hosting accounts (AWS, Firebase, etc.)
-
-🔹 Human Resource
-Frontend Developer
-
-Backend Developer
-
-3D Modeler / Multimedia Creator
-
-Content Writer (for plant data and AYUSH info)
-
-UI/UX Designer
-
+5. VR Headset Compatibility – Optional but beneficial for immersive experience.
