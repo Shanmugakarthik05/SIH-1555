@@ -18,9 +18,7 @@ A web-based platform that provides an interactive and immersive experience of a 
 
 ## Proposed Solution / Architecture Diagram
 
-![img](https://github.com/user-attachments/assets/2f084a16-09c4-4b69-afb4-b66d17b658dd)
-
-## Use Cases
+![alt text](image.png)## Use Cases
 
 | Use Case ID | Title                           | Description                                                                 |
 |-------------|---------------------------------|-----------------------------------------------------------------------------|
